@@ -14,7 +14,7 @@
     "typescript": "4.5.2"
   },
   "dependencies": {
-    "@types/node": "^12.11.7",
+    "@types/node": "^16.0.0",
     "@veramo/core": "^3.1.1-next.9",
     "@veramo/credential-ld": "^3.1.1-next.9",
     "@veramo/credential-w3c": "^3.1.1-next.9",
