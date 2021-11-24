@@ -1,0 +1,31 @@
+{
+  "name": "ex8",
+  "version": "1.0.0",
+  "description": "Sample code for issuing and verifying a JSON-LD credential with Veramo",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "npx ts-node index.ts",
+    "update:veramo": "yarn add @veramo/core@next @veramo/credential-ld@next @veramo/credential-w3c@next @veramo/did-manager@next @veramo/did-provider-key@next @veramo/did-resolver@next @veramo/key-manager@next @veramo/kms-local@next"
+  },
+  "author": "Mircea Nistor <mircea.nistor@mesh.xyz>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "@types/node": "^12.11.7",
+    "@veramo/core": "^3.1.1-next.9",
+    "@veramo/credential-ld": "^3.1.1-next.9",
+    "@veramo/credential-w3c": "^3.1.1-next.9",
+    "@veramo/did-manager": "^3.1.1-next.9",
+    "@veramo/did-provider-key": "^3.1.1-next.9",
+    "@veramo/did-resolver": "^3.1.1-next.9",
+    "@veramo/key-manager": "^3.1.1-next.9",
+    "@veramo/kms-local": "^3.1.1-next.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:veramolabs/credential-ld-example.git"
+  }
+}
