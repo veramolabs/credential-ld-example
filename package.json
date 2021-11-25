@@ -34,5 +34,8 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:veramolabs/credential-ld-example.git"
+  },
+  "jest": {
+    "testMatch": ["**/__tests__/**/*.test.ts"]
   }
 }
