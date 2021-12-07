@@ -22,14 +22,14 @@
   },
   "dependencies": {
     "@types/node": "^16.0.0",
-    "@veramo/core": "3.1.1-next.16",
-    "@veramo/credential-ld": "3.1.1-next.16",
-    "@veramo/credential-w3c": "3.1.1-next.16",
-    "@veramo/did-manager": "3.1.1-next.16",
-    "@veramo/did-provider-key": "3.1.1-next.16",
-    "@veramo/did-resolver": "3.1.1-next.16",
-    "@veramo/key-manager": "3.1.1-next.16",
-    "@veramo/kms-local": "3.1.1-next.16"
+    "@veramo/core": "3.1.1-next.17",
+    "@veramo/credential-ld": "3.1.1-next.17",
+    "@veramo/credential-w3c": "3.1.1-next.17",
+    "@veramo/did-manager": "3.1.1-next.17",
+    "@veramo/did-provider-key": "3.1.1-next.17",
+    "@veramo/did-resolver": "3.1.1-next.17",
+    "@veramo/key-manager": "3.1.1-next.17",
+    "@veramo/kms-local": "3.1.1-next.17"
   },
   "repository": {
     "type": "git",
