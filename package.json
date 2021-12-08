@@ -22,20 +22,23 @@
   },
   "dependencies": {
     "@types/node": "^16.0.0",
-    "@veramo/core": "3.1.1-next.17",
-    "@veramo/credential-ld": "3.1.1-next.17",
-    "@veramo/credential-w3c": "3.1.1-next.17",
-    "@veramo/did-manager": "3.1.1-next.17",
-    "@veramo/did-provider-key": "3.1.1-next.17",
-    "@veramo/did-resolver": "3.1.1-next.17",
-    "@veramo/key-manager": "3.1.1-next.17",
-    "@veramo/kms-local": "3.1.1-next.17"
+    "@veramo/core": "^3.1.1-next.17",
+    "@veramo/credential-ld": "^3.1.1-next.17",
+    "@veramo/credential-w3c": "^3.1.1-next.17",
+    "@veramo/did-manager": "^3.1.1-next.17",
+    "@veramo/did-provider-ethr": "^3.1.0",
+    "@veramo/did-provider-key": "^3.1.1-next.17",
+    "@veramo/did-resolver": "^3.1.1-next.17",
+    "@veramo/key-manager": "^3.1.1-next.17",
+    "@veramo/kms-local": "^3.1.1-next.17"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:veramolabs/credential-ld-example.git"
   },
   "jest": {
-    "testMatch": ["**/__tests__/**/*.test.ts"]
+    "testMatch": [
+      "**/__tests__/**/*.test.ts"
+    ]
   }
 }
