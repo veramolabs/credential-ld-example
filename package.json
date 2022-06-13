@@ -1,5 +1,5 @@
 {
-  "name": "ex8",
+  "name": "credential-ld-example",
   "version": "1.0.0",
   "description": "Sample code for issuing and verifying a JSON-LD credential with Veramo",
   "main": "src/index.ts",
@@ -15,22 +15,22 @@
     "@babel/core": "7.18.2",
     "@babel/preset-env": "7.18.2",
     "@babel/preset-typescript": "7.17.12",
-    "@types/jest": "27.5.2",
-    "babel-jest": "27.5.1",
-    "jest": "27.5.1",
+    "@types/jest": "28.1.1",
+    "babel-jest": "28.1.1",
+    "jest": "28.1.1",
     "typescript": "4.7.3"
   },
   "dependencies": {
     "@types/node": "^16.0.0",
-    "@veramo/core": "^3.1.5-next",
-    "@veramo/credential-ld": "^3.1.5-next",
-    "@veramo/credential-w3c": "^3.1.5-next",
-    "@veramo/did-manager": "^3.1.5-next",
-    "@veramo/did-provider-ethr": "^3.1.5-next",
-    "@veramo/did-provider-key": "^3.1.5-next",
-    "@veramo/did-resolver": "^3.1.5-next",
-    "@veramo/key-manager": "^3.1.5-next",
-    "@veramo/kms-local": "^3.1.5-next"
+    "@veramo/core": "^3.1.6-next",
+    "@veramo/credential-ld": "^3.1.6-next",
+    "@veramo/credential-w3c": "^3.1.6-next",
+    "@veramo/did-manager": "^3.1.6-next",
+    "@veramo/did-provider-ethr": "^3.1.6-next",
+    "@veramo/did-provider-key": "^3.1.6-next",
+    "@veramo/did-resolver": "^3.1.6-next",
+    "@veramo/key-manager": "^3.1.6-next",
+    "@veramo/kms-local": "^3.1.6-next"
   },
   "repository": {
     "type": "git",
