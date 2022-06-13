@@ -66,8 +66,12 @@ scope here.
 
 In this example, the same agent acts as both issuer and verifier, so the mappings are identical.
 
-## Did:ethr 
-To make it work with a did:ethr, you need to add VeramoEcdsaSecp256k1RecoverySignature2020 to your agent setup. Alternatively, you could call didManagerAddKey to add a Ed25519 key to your did:ethr DID document, but that's probably more complicated.
+## Did:ethr
+
+To make it work with a did:ethr, you need to add `VeramoEcdsaSecp256k1RecoverySignature2020` to your agent setup.
+Alternatively, you could call `didManagerAddKey` to add a `Ed25519` key to your `did:ethr` DID document, but that's
+probably more complicated.
+
 ## Contributing
 
 Go to [veramo on github](https://github.com/uport-project/veramo). Contributions are welcome ;)

@@ -1,5 +1,5 @@
 {
-  "name": "ex8",
+  "name": "credential-ld-example",
   "version": "1.0.0",
   "description": "Sample code for issuing and verifying a JSON-LD credential with Veramo",
   "main": "src/index.ts",
