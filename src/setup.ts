@@ -10,7 +10,6 @@ import { Resolver } from 'did-resolver'
 import { EthrDIDProvider } from '@veramo/did-provider-ethr'
 import { getResolver as ethrDidResolver } from 'ethr-did-resolver'
 
-
 export const MY_CUSTOM_CONTEXT_URI = "https://example.com/custom/context"
 
 const extraContexts: Record<string, ContextDoc> = {}
@@ -19,15 +18,15 @@ extraContexts[MY_CUSTOM_CONTEXT_URI] = {
     "nothing": "https://example.com/custom/context",
   }
 }
-const INFURA_PROJECT_ID = "3586660d179141e3801c3895de1c2eba"
+const INFURA_PROJECT_ID = "7162f765a166498a8956d9183c4837b3"
 
-export function setupAgent(): TAgent<ICredentialIssuer & IDIDManager & IKeyManager> {
+export function setupAgent() {
   const agent = createAgent<IResolver & IKeyManager & IDIDManager & ICredentialIssuer>({
     plugins: [
       new KeyManager({
         store: new MemoryKeyStore(),
         kms: {
-          local: new KeyManagementSystem(new MemoryPrivateKeyStore())
+          local: new KeyManagementSystem(new MemoryPrivateKeyStore()) // for this sample, keys are stored in memory
         }
       }),
       new DIDManager({
@@ -36,7 +35,7 @@ export function setupAgent(): TAgent<ICredentialIssuer & IDIDManager & IKeyManag
           'did:ethr:goerli': new EthrDIDProvider({
             defaultKms: 'local',
             network: 'goerli',
-            rpcUrl: 'https://rinkeby.infura.io/v3/' + INFURA_PROJECT_ID,
+            rpcUrl: 'https://goerli.infura.io/v3/' + INFURA_PROJECT_ID,
             gas: 100000,
             ttl: 60 * 60 * 24 * 30 * 12 + 1,
           }),
