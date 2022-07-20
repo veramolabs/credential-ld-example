@@ -12,7 +12,7 @@ export async function createDID(agent: TAgent<IDIDManager>): Promise<IIdentifier
 }
 
 export async function createEthrDID(agent: TAgent<IDIDManager>): Promise<IIdentifier> {
-  const identifier = await agent.didManagerCreate({provider:"did:ethr:rinkeby"})
+  const identifier = await agent.didManagerCreate({provider:"did:ethr:goerli"})
   return identifier
 }
 

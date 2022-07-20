@@ -21,7 +21,7 @@ extraContexts[MY_CUSTOM_CONTEXT_URI] = {
 }
 const INFURA_PROJECT_ID = "3586660d179141e3801c3895de1c2eba"
 
-export function setupAgent(): TAgent<ICredentialIssuer & IDIDManager> {
+export function setupAgent(): TAgent<ICredentialIssuer & IDIDManager & IKeyManager> {
   const agent = createAgent<IResolver & IKeyManager & IDIDManager & ICredentialIssuer>({
     plugins: [
       new KeyManager({
@@ -33,11 +33,11 @@ export function setupAgent(): TAgent<ICredentialIssuer & IDIDManager> {
       new DIDManager({
         providers: {
           'did:key': new KeyDIDProvider({ defaultKms: 'local' }),
-          'did:ethr:rinkeby': new EthrDIDProvider({
+          'did:ethr:goerli': new EthrDIDProvider({
             defaultKms: 'local',
-            network: 'rinkeby',
+            network: 'goerli',
             rpcUrl: 'https://rinkeby.infura.io/v3/' + INFURA_PROJECT_ID,
-            gas: 1000001,
+            gas: 100000,
             ttl: 60 * 60 * 24 * 30 * 12 + 1,
           }),
         },

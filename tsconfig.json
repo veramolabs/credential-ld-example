@@ -1,11 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
+    "target": "ES2020",
+    "module": "CommonJS",
     "declaration": true,
     "sourceMap": true,
     "outDir": "lib",
     "strict": true,
-    "useUnknownInCatchVariables": false
+    "useUnknownInCatchVariables": false,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "skipLibCheck": true
   }
 }

@@ -22,7 +22,7 @@ describe('credential flow', () => {
         expect.assertions(2)
         ethrIssuer = await createEthrDID(agent)
         expect(issuer).toBeDefined()
-        expect(ethrIssuer.provider).toBe('did:ethr:rinkeby')
+        expect(ethrIssuer.provider).toBe('did:ethr:goerli')
     })
     it('can create LD credential', async () => {
         expect.assertions(3)
